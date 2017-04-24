@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <style>
+            *,
+            *:after,
+            *:before{
+                margin: 0;
+                padding: 0;
+            }
+            
+            body{
+                margin: 0;
+                padding: 0;
+            }
+            
+            .timeline{
+                width: 100%;
+                height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            ul{
+                list-style: none;
+            }
+            
+            li{
+                width: 50px;
+                height: 50px;
+                background: red;
+                border-radius: 50%;
+                border: 2px solid black;
+                text-align: center;
+                float: left;
+                margin-left: 50px;
+            }
+            
+            li:after{
+                content:"";
+                border-bottom: 2px solid black;
+                width: 50px;
+                position: absolute;
+                margin: 24px 0 0 23px;
+
+            }
+            
+            li:last-child:after{
+                content:"";
+                border-bottom: 2px solid black;
+                width: 0px;
+                position: absolute;
+                margin: 24px 0 0 23px;
+
+            }
+        </style>
+    </head>
+    <body>
+        <div class="timeline">
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+            </ul>
+        </div>
+    </body>
+</html>
